@@ -1,22 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - prints all numbers of base 6 in lower case
- * 
- * Description: using the main function
- * this program prints all numbers of base 16 in lower case
- * Return: 0
+ * main - Entry point
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char c;
-for (c = '0'; c <= '9'; c++)
-{
-	putchar(c);
-}
-for (c = 'a'; c <= 'f'; c++)
-{
-	putchar(c);
-}
-putchar('/n');
-return (0);
+	char ch;
+
+	for (ch = '0'; ch <= '9'; ch++)
+	{
+		putchar(ch);
+	}
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
 }
