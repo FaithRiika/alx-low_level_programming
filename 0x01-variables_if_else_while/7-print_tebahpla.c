@@ -1,18 +1,22 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 /**
- * main - prints lower case alphabets in reverse
- *
- * Description: in the main function
- * this program prints lower case alphabets in reverse
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
  * Return: 0
  */
 int main(void)
 {
-char ch;
-for (c = 'z'; c >= 'a'; c--)
-{
-	putchar(c);
-}
-putchar('/n');
-return (0);
+	char c = 'z';
+
+	while (c >= 'a')
+	{
+		putchar(c);
+		c--;
+	}
+
+	putchar('\n');
+	return (0);
 }
